@@ -137,3 +137,6 @@ html {
 .el-input__wrapper {
   @import "!my-2 ms:!my-3";
 }
+.el-input__inner{
+  height: 44px !important;
+}

@@ -3,7 +3,7 @@
     <label
       v-if="label"
       for=""
-      class="mb-1 sm:mb-2 font-medium text-white text-sm sm:text-base flex justify-start"
+      class="mb-1 sm:mb-2 font-medium text-[#374151] text-sm sm:text-base flex justify-start"
       :class="error ? 'text-[red]' : ''"
       >{{ label }}</label
     >
@@ -13,8 +13,8 @@
       size="large"
       :placeholder="placeholder"
       @change="handleSelect"
-      class="w-full border border-gray-500 rounded-[4px]"
-      :class="error ? 'border border-[red] rounded-[4px]' : ''"
+      class="w-full border border-[#D1D5DB] rounded-[8px]"
+      :class="error ? 'border border-[red] rounded-[8px]' : ''"
     >
       <el-option
         v-for="item in data"

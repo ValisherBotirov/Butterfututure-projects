@@ -1,15 +1,12 @@
 <template>
   <div>
-    <SBanner id="main-section"  />
-    <!--    <SBlock id="blog-section" />-->
-    <STeam />
+    <SBanner id="main-section" />
+    <WhyUS id="why-us" />
     <SClustomer id="customer-section" />
-    <SContact class="!mb-[100px]" />
   </div>
 </template>
 <script setup lang="ts">
 import SBanner from "@/sections/SBanner.vue";
 import SClustomer from "@/sections/SClustomer.vue";
-import SContact from "@/sections/SContact.vue";
-import STeam from "@/sections/STeam.vue";
+import WhyUS from "@/sections/WhyUS.vue";
 </script>

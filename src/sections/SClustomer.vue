@@ -1,12 +1,5 @@
 <template>
   <div class="container pt-[80px] sm:pt-[90px]">
-    <div class="flex gap-4 items-center justify-center">
-      <p class="text-white inline flex-shrink-0 leading-[19.36px]">
-        <span class="text-[#FDF001] font-[400]"
-          >04 <span class="px-1 pr-2 font-bold">|</span> </span
-        >{{ $t("customer_idea") }}
-      </p>
-    </div>
 
     <div
       class="grid grid-cols-1 md:grid-cols-3 gap-[90px] md:!gap-[21px] mt-[140px] ms:mt-[160px]"

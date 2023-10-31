@@ -1,7 +1,6 @@
 <template>
   <div class="relative">
 
-
   <div class="container pt-5 md:pt-[72px]">
     <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-5 md:gap-8">
       <div class="md:py-[50px]">
