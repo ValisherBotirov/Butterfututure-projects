@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-[#010108] h-full overflow-hidden min-h-[100vh] flex flex-col justify-between"
+    class="bg-#fff h-full overflow-hidden min-h-[100vh] flex flex-col justify-between"
   >
     <div>
       <Header />

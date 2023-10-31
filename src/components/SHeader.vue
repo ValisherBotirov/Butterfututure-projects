@@ -15,18 +15,17 @@
         </div>
         <router-link to="/" class="flex flex-shrink-0">
           <div class="flex items-center gap-2">
-            <div class="max-w-[50px] max-h-[50px] rounded-[50%]">
+            <div>
               <img
-                src="../assets/svg/logo-white.svg"
+                src="../assets/images/logo.svg"
                 alt="logo"
-                class="py-1 px-1 w-full object-contain"
+                class="py-1 "
               />
             </div>
-            <p class="text-white text-2xl">algaritm</p>
           </div>
         </router-link>
         <div
-          class="items-center gap-[60px] text-white cursor-pointer hidden lg:flex"
+          class="items-center gap-[60px] cursor-pointer hidden lg:flex"
         >
           <a
             href="#main-section"
@@ -53,27 +52,20 @@
 
         <div class="flex flex-shrink-0 items-center gap-3">
           <div
-            class="relative group cursor-pointer text-white ms:py-3 ms:px-4 ms:border border-white rounded-[20px]"
+            class="relative group cursor-pointer bg-[#F3F4F6] text-white py-3 px-3 md:px-4 rounded-[16px]"
           >
             <div @click="openLang" class="flex items-start gap-1">
-              <img
-                :src="getImageUrl(activeLang.value)"
-                alt="lang svg"
-                class="w-[30px] ms:w-auto"
-              />
-              <div class="hidden ms:flex items-center gap-3">
-                <p class="">{{ activeLang?.label }}</p>
-                <img
-                  src="@/assets/icon/icon-chevron.svg"
-                  alt="icon header"
-                  class="transition duration-300"
-                  :class="isOpen ? 'rotate-[180deg]' : ''"
-                />
-              </div>
+<!--              <img-->
+<!--                :src="getImageUrl(activeLang.value)"-->
+<!--                alt="lang svg"-->
+<!--                class="w-[30px] ms:w-auto"-->
+<!--              />-->
+                <p class="flex items-center font-medium">{{ activeLang?.label }}</p>
+
             </div>
 
             <ul
-              class="absolute top-full bg-white rounded-lg shadow-lg w-full left-[-60px] xs:left-[-55px] ms:left-0 min-w-[6rem] overflow-hidden"
+              class="absolute top-full bg-white rounded-lg shadow-lg w-full left-[-60px] xs:left-[-55px] ms:left-[-20px]  min-w-[6rem] overflow-hidden"
               :class="isOpen ? 'block' : 'hidden'"
             >
               <li
@@ -114,17 +106,17 @@ const openModal = ref(false);
 const langs = [
   {
     value: "uz",
-    label: "O'zb",
+    label: "UZ",
   },
   {
     value: "ru",
-    label: "Rus",
+    label: "Ru",
   },
 ];
 
 const activeLang = ref({
   value: "uz",
-  label: "O'zb",
+  label: "UZ",
 });
 
 const isOpen = ref(false);
@@ -163,7 +155,7 @@ onMounted(() => {
   width: 100%;
   left: 0;
   top: 22px;
-  background: #fdf001;
+  background: #FF6600;
   border-radius: 2px;
   transition: 0.2s;
   transition-timing-function: ease-in-out;
