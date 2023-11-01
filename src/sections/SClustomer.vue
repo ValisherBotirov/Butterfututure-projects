@@ -1,56 +1,49 @@
 <template>
-  <div class="container pt-[80px] sm:pt-[90px]">
-
-    <div
-      class="grid grid-cols-1 md:grid-cols-3 gap-[90px] md:!gap-[21px] mt-[140px] ms:mt-[160px]"
+  <div class="container pt-16 md:pt-[82px]">
+    <h2
+      class="text-[#1F2937] font-semibold text-2xl md:text-[40px] leading-8 md:leading-[48px] text-center"
     >
-      <CustomerCard
-        v-for="(item, index) in customerData"
-        :key="index"
-        :data="item"
-        class="ms:mx-[20px] md:!mx-[0px]"
-      />
-    </div>
+      Наши довольные вендоры
+    </h2>
+    <swiper
+      :slidesPerView="3"
+      :spaceBetween="32"
+      :modules="[Autoplay]"
+      :loop="true"
+      :breakpoints="{
+        '320': { slidesPerView: 1, spaceBetween: 15 },
+        '480': { slidesPerView: 1, spaceBetween: 20 },
+        '768': { slidesPerView: 3, spaceBetween: 32 },
+      }"
+      class="mySwiper mt-8 md:mt-12"
+    >
+      <swiper-slide v-for="(item, index) in customerData" :key="index">
+        <CustomerCard :data="item" class="ms:mx-[20px] md:!mx-[0px]" />
+      </swiper-slide>
+    </swiper>
   </div>
 </template>
 
 <script setup lang="ts">
 import CustomerCard from "@/components/card/CustomerCard.vue";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css";
+import { Autoplay } from "swiper/modules";
 const customerData = [
   {
     id: 1,
-    images: "customer.png",
-    idea: "Top Jamoa! Natija super.",
-    name: "Javohir K.",
-    position: "Direktor",
+    images: "user1",
+    text: "When our designs need an expert opinion or approval, I know I can rely on your agency Thank you for all your help-I will be recommending you to everyone",
   },
   {
     id: 2,
-    images: "customer2.png",
-    idea: "Shubhasiz barchaga tavsiya qilaman!",
-    name: "Mavluda A.",
-    position: "Bosh Menedjer",
+    images: "user2",
+    text: "When our designs need an expert opinion or approval, I know I can rely on your agency Thank you for all your help-I will be recommending you to everyone",
   },
   {
     id: 3,
-    images: "customer3.png",
-    idea: "Rahmat! Jamoa ishlari juda yoqdi.",
-    name: "Karimjon N.",
-    position: "Menedjer",
+    images: "user3",
+    text: "When our designs need an expert opinion or approval, I know I can rely on your agency Thank you for all your help-I will be recommending you to everyone",
   },
 ];
 </script>
-
-<style scoped>
-.linear {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.5) -1.52%,
-    rgba(0, 0, 0, 0) 109.98%
-  );
-}
-.gradient {
-  box-shadow: 0px 0px 30px 0px #fdf001, inset 0px 0px 4px 0px #ffffff;
-  background: #fdf001;
-}
-</style>
