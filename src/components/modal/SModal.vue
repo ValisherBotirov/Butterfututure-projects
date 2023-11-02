@@ -107,6 +107,7 @@ function cancelModal() {
 
 function fetchModal() {
   console.log("fetch");
+  emit('closeModal', false)
 }
 
 const selectData = [
