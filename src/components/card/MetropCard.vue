@@ -15,7 +15,7 @@ function getImageUrl(name: string) {
     <img
       :src="getImageUrl(image)"
       alt="images"
-      class="h-[216px] md:h-[488px] w-full  rounded-2xl object-cover"
+      class="h-[216px] md:h-[488px] w-full rounded-2xl object-cover"
     />
   </div>
 </template>
