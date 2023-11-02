@@ -7,9 +7,7 @@
         class="mx-auto h-[27px]"
       />
       <p class="mt-4 text-[#374151] font-normal leading-6">
-        {{
-          data.text
-        }}
+        {{ data.text }}
       </p>
     </div>
     <div class="mt-6 flex flex-col items-center">

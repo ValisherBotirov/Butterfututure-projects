@@ -1,7 +1,7 @@
 <template>
   <div class="container pt-16 md:pt-[82px]">
     <h2
-      class="text-[#1F2937] font-semibold text-2xl md:text-[40px] leading-8 md:leading-[48px] text-center"
+      class="text-[#1F2937] font-semibold text-xl md:text-[40px] leading-8 md:leading-[48px] text-center"
     >
       Наши довольные вендоры
     </h2>
@@ -10,8 +10,10 @@
       :spaceBetween="32"
       :modules="[Autoplay]"
       :loop="true"
+      :autoplay="true"
+      :delay="300"
       :breakpoints="{
-        '320': { slidesPerView: 1, spaceBetween: 15 },
+        '320': { slidesPerView: 1.2, spaceBetween: 15 },
         '480': { slidesPerView: 1, spaceBetween: 20 },
         '768': { slidesPerView: 3, spaceBetween: 32 },
       }"

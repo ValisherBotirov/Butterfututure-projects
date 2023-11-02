@@ -16,17 +16,11 @@
         <router-link to="/" class="flex flex-shrink-0">
           <div class="flex items-center gap-2">
             <div>
-              <img
-                src="../assets/images/logo.svg"
-                alt="logo"
-                class="py-1 "
-              />
+              <img src="../assets/images/logo.svg" alt="logo" class="py-1" />
             </div>
           </div>
         </router-link>
-        <div
-          class="items-center gap-[60px] cursor-pointer hidden lg:flex"
-        >
+        <div class="items-center gap-[60px] cursor-pointer hidden lg:flex">
           <a
             href="#main-section"
             class="font-medium text-sm leading-[16.94px] transition duration-300 hover:text-[#0469FF] relative navItem"
@@ -55,17 +49,18 @@
             class="relative group cursor-pointer bg-[#F3F4F6] text-white py-3 px-3 md:px-4 rounded-[16px]"
           >
             <div @click="openLang" class="flex items-start gap-1">
-<!--              <img-->
-<!--                :src="getImageUrl(activeLang.value)"-->
-<!--                alt="lang svg"-->
-<!--                class="w-[30px] ms:w-auto"-->
-<!--              />-->
-                <p class="flex items-center font-medium">{{ activeLang?.label }}</p>
-
+              <!--              <img-->
+              <!--                :src="getImageUrl(activeLang.value)"-->
+              <!--                alt="lang svg"-->
+              <!--                class="w-[30px] ms:w-auto"-->
+              <!--              />-->
+              <p class="flex items-center font-medium">
+                {{ activeLang?.label }}
+              </p>
             </div>
 
             <ul
-              class="absolute top-full bg-white rounded-lg shadow-lg w-full left-[-60px] xs:left-[-55px] ms:left-[-20px]  min-w-[6rem] overflow-hidden"
+              class="absolute top-full bg-white rounded-lg shadow-lg w-full left-[-60px] xs:left-[-55px] ms:left-[-20px] min-w-[6rem] overflow-hidden"
               :class="isOpen ? 'block' : 'hidden'"
             >
               <li
@@ -155,7 +150,7 @@ onMounted(() => {
   width: 100%;
   left: 0;
   top: 22px;
-  background: #FF6600;
+  background: #ff6600;
   border-radius: 2px;
   transition: 0.2s;
   transition-timing-function: ease-in-out;

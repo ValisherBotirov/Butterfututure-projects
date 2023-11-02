@@ -5,7 +5,10 @@
       :for="`a-input-${id}`"
       class="flex items-center justify-between mb-1 sm:mb-2"
     >
-      <span class="text-sm sm:text-base leading-130 text-white font-normal" :class="labelStyle">
+      <span
+        class="text-sm sm:text-base leading-130 text-white font-normal"
+        :class="labelStyle"
+      >
         {{ $t(label) }}
       </span>
       <transition name="fade">
@@ -70,7 +73,7 @@ interface Props {
   pattern?: string;
   required?: boolean;
   suffixClass?: string;
-  labelStyle?:string
+  labelStyle?: string;
 }
 
 withDefaults(defineProps<Props>(), {

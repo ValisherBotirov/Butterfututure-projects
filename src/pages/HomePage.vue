@@ -2,6 +2,7 @@
   <div>
     <SBanner id="main-section" />
     <WhyUS id="why-us" />
+    <SMerop id="section-merop" />
     <SClustomer id="customer-section" />
   </div>
 </template>
@@ -9,4 +10,5 @@
 import SBanner from "@/sections/SBanner.vue";
 import SClustomer from "@/sections/SClustomer.vue";
 import WhyUS from "@/sections/WhyUS.vue";
+import SMerop from "@/sections/SMerop.vue";
 </script>
