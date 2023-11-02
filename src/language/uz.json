@@ -2,10 +2,13 @@
   "about": "Biz Haqimizda",
   "main": "Asosiy",
   "service": "Xizmatlar",
-  "blog": "Blog",
+  "blog": "Мероприятия",
   "connect": "Bog'lanish",
   "our_services": "Bizning Xizmatlar",
   "our_lesson": "Bizning Kurslar",
   "more": "Batafsilroq",
-  "customer_idea": "Mijozlar fikri"
+  "customer_idea": "Mijozlar fikri",
+  "whyUs": "Nima uchun biz?",
+  "bannerText": "Universal Coozin platformasi o'z-o'zini ish bilan band ayollar uchun ko'plab imkoniyatlarni taqdim etadi. Platformada siz tovarlar va xizmatlarni sotishingiz, shuningdek, yangi ko'nikmalarni o'rganishingiz va biznesingizni rivojlantirishingiz mumkin",
+  "bannerTitle": "Coozin bilan potentsialingizni oching!"
 }

@@ -14,31 +14,32 @@
           @click="emit('closeSidebar', false)"
           class="font-medium mt-6 inline-block leading-[16.94px] transition duration-300 border-b pb-2 hover:text-[#0469FF] hover:border-[#0469FF]"
         >
-          {{ $t("main") }}
+          {{ $t("about") }}
         </a>
         <div>
           <a
             href="#about-section"
             @click="emit('closeSidebar', false)"
-            class="font-medium mt-6 inline-block leading-[16.94px] transition duration-300 hover:text-[#0469FF] hover:border-[#0469FF] transition duration-300 border-b pb-2"
+            class="font-medium text-white mt-6 inline-block leading-[16.94px] transition duration-300 hover:text-[#0469FF] hover:border-[#0469FF] border-b pb-2"
           >
-            {{ $t("about") }}
+            {{ $t("main") }}
           </a>
         </div>
 
         <div>
           <a
-            href="#service-section"
+            href="#section-merop"
             @click="emit('closeSidebar', false)"
-            class="font-medium mt-6 inline-block leading-[16.94px] transition duration-300 hover:text-[#0469FF] transition duration-300 border-b pb-2 hover:border-[#0469FF]"
+            class="font-medium text-white mt-6 inline-block leading-[16.94px] transition duration-300 hover:text-[#0469FF] border-b pb-2 hover:border-[#0469FF]"
           >
-            {{ $t("service") }}
+            {{ $t("whyUs") }}
           </a>
         </div>
+
         <a
-          href="#blog-section"
+          href="#customer-section"
           @click="emit('closeSidebar', false)"
-          class="font-medium mt-6 inline-block leading-[16.94px] transition duration-300 hover:text-[#0469FF] transition duration-300 border-b pb-2 hover:border-[#0469FF]"
+          class="font-medium text-white mt-6 inline-block leading-[16.94px] hover:text-[#0469FF] transition duration-300 border-b pb-2 hover:border-[#0469FF]"
         >
           {{ $t("blog") }}
         </a>

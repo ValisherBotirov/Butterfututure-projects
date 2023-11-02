@@ -1,11 +1,14 @@
 {
   "about": "О нас",
-  "main": "Основной",
+  "main": "Edu Coozin",
   "service": "Услуги",
-  "blog": "Блог",
-  "connect": "Связь",
+  "blog": "Мероприятия",
+  "connect": "Присоединиться",
   "our_services": "Bizning Xizmatlar",
   "our_lesson": "Наши курсы",
   "more": "Batafsilroq",
-  "customer_idea": "Mijozlar fikri"
+  "customer_idea": "Mijozlar fikri",
+  "whyUs": "Почему Coozin?",
+  "bannerText": "Универсальная платформа Coozin предоставляют множество возможностей для самозанятых женщин. На платформе можно продавать товары и услуги, а также учиться новым навыкам и развивать свой бизнес",
+  "bannerTitle": "Раскрой свой потенциал вместе с Coozin!"
 }

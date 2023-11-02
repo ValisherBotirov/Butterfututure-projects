@@ -26,7 +26,7 @@
   padding: 20px 20px 20px;
   border-radius: 5px;
   text-align: center;
-  background-color: #180d4c;
+  background-color: #FF6600;
   /*  background: linear-gradient(265.79deg, #341289 -16.8%, #9949FF 89.61%);*/
 }
 

@@ -1,7 +1,7 @@
 <template>
   <div>
     <SBanner id="main-section" />
-    <WhyUS id="why-us" />
+    <WhyUS id="about-section" />
     <SMerop id="section-merop" />
     <SClustomer id="customer-section" />
   </div>

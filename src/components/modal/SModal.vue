@@ -47,8 +47,9 @@
               v-model="form.select"
               class="mt-3 sm:mt-4"
               :data="selectData"
-              placeholder="kurslar"
-              label="Bizning kurslarimiz !"
+              placeholder="Turar joy"
+              label="Turar hudidingiz tanlang"
+
             />
             <STextarea
               v-model="form.message"
@@ -110,20 +111,40 @@ function fetchModal() {
 
 const selectData = [
   {
-    value: "kompyuter savadxonligi",
-    label: "Foundation",
+    value: "Ташкент",
+    label: "Ташкент",
   },
   {
-    value: "websayt",
-    label: "Front end",
+    value: "Андижон",
+    label: "Андижон ",
   },
   {
-    value: "java back end",
-    label: "Java Back end",
+    value: "Бухоро ",
+    label: "Бухоро ",
   },
   {
-    value: "flutter",
-    label: "Flutter",
+    value: "Жиззах ",
+    label: "Жиззах ",
+  },
+  {
+    value: "Қашқадарё  ",
+    label: "Қашқадарё  ",
+  },
+  {
+    value: "Навоий",
+    label: "Навоий",
+  },
+  {
+    value: "Самарқанд ",
+    label: "Самарқанд ",
+  },
+  {
+    value: "Сурхондарё ",
+    label: "Сурхондарё ",
+  },
+  {
+    value: "Фарғона ",
+    label: "Фарғона ",
   },
 ];
 </script>

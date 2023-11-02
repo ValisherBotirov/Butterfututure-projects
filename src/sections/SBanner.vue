@@ -7,13 +7,10 @@
             <h2
               class="text-[#1F2937] font-semibold text-2xl md:text-[40px] leading-8 md:leading-[48px] max-w-[600px]"
             >
-              Раскрой свой потенциал вместе с Coozin!
+              {{ $t('bannerTitle') }}
             </h2>
             <p class="mt-3 md:mt-4 text-[#4B5563] font-normal leading-6">
-              Универсальная платформа Coozin предоставляют множество
-              возможностей для самозанятых женщин. На платформе можно продавать
-              товары и услуги, а также учиться новым навыкам и развивать свой
-              бизнес
+              {{ $t('bannerText') }}
             </p>
             <SButton
               custom-class="md:!max-w-[200px]"
@@ -24,11 +21,9 @@
             </SButton>
           </div>
           <div class="hidden md:block md:mt-[150px]">
-            <p class="text-[#374151]">Достижения</p>
+            <p class="text-[#374151] font-semibold">Достижения</p>
             <div class="grid grid-cols-3 gap-4 mt-4 text-xl">
-              <div>Item 1</div>
-              <div>Item 2</div>
-              <div>Item 3</div>
+              <VueCounter v-for="item in countData" :key="item" v-bind="item" />
             </div>
           </div>
         </div>
@@ -106,6 +101,7 @@ import { ref } from "vue";
 import SButton from "@/components/SButton.vue";
 import SModal from "@/components/modal/SModal.vue";
 import BannerCard from "@/components/card/BannerCard.vue";
+import VueCounter from "@/components/card/VueCounter.vue";
 const openModal = ref(false);
 
 const bannerList = [
@@ -127,6 +123,21 @@ const bannerList = [
     description:
       "Пользователи которые успешно прошли курсы имеют возможность\n" +
       "присоединиться к торговой площадке Coozin.",
+  },
+];
+
+const countData = [
+  {
+    count: 130,
+    text: "женщин прошли обучение",
+  },
+  {
+    count: 150,
+    text: "присоединились в платформу",
+  },
+  {
+    count: 100,
+    text: "пользователей платформы",
   },
 ];
 </script>

@@ -25,20 +25,20 @@
             href="#main-section"
             class="font-medium text-sm leading-[16.94px] transition duration-300 hover:text-[#0469FF] relative navItem"
           >
-            {{ $t("main") }}
+            {{ $t("about") }}
           </a>
           <a
             href="#about-section"
             class="font-medium text-sm leading-[16.94px] transition duration-300 hover:text-[#0469FF] relative navItem"
-            >{{ $t("about") }}</a
+            >{{ $t("main") }}</a
           >
           <a
-            href="#service-section"
+            href="#section-merop"
             class="font-medium text-sm leading-[16.94px] transition duration-300 hover:text-[#0469FF] relative navItem"
-            >{{ $t("service") }}</a
+            >{{ $t("whyUs") }}</a
           >
           <a
-            href="#blog-section"
+            href="#customer-section"
             class="font-medium text-sm leading-[16.94px] transition duration-300 hover:text-[#0469FF] relative navItem"
             >{{ $t("blog") }}</a
           >
