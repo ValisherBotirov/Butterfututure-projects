@@ -10,6 +10,7 @@
     "format": "prettier .  --write"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "swiper": "^11.0.3",
     "vue": "^3.2.16",
     "vue-i18n": "^9.2.2",

@@ -1,5 +1,4 @@
 import { createApp } from "vue";
-// import { createPinia } from "pinia";
 import App from "./App.vue";
 import "@/styles/index.css";
 
@@ -20,16 +19,16 @@ import Maska from "maska";
 import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
 
-//vue3-counter
-
-// const pinia = createPinia();
+//aos animation
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const app = createApp(App);
 app.use(router);
-// app.use(pinia);
 app.use(Toast);
 app.use(Maska);
 app.use(i18n);
 app.use(ElementPlus);
 app.component("vue3-autocounter", Vue3Autocounter);
+app.AOS = new AOS.init({ once: true });
 app.mount("#app");

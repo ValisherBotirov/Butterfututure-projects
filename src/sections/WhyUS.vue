@@ -1,18 +1,18 @@
 <template>
   <div class="relative">
     <div class="container pt-8 md:pt-[104px]">
-      <div>
-        <h2
+      <div >
+        <h2 data-aos="fade-left"
           class="text-[#1F2937] font-semibold text-2xl md:text-[40px] leading-8 md:leading-[48px] text-center"
         >
           Почему Coozin?
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-8 mt-12">
+        <div data-aos="fade-right" class="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-8 mt-12">
           <WhyUSCard v-for="item in data" :key="item.id" v-bind="item" />
         </div>
       </div>
       <div class="mt-8 md:mt-16 grid grid-cols-5 items-center gap-10">
-        <div class="col-span-5 md:col-span-3">
+        <div data-aos="fade-right" class="col-span-5 md:col-span-3">
           <h2
             class="text-[#1F2937] font-semibold text-xl md:text-[40px] leading-8 md:leading-[48px] max-w-[660px]"
           >
@@ -89,7 +89,7 @@
             </SButton>
           </div>
         </div>
-        <div class="hidden md:grid md:col-span-2">
+        <div data-aos="fade-left" class="hidden md:grid md:col-span-2">
           <img src="@/assets/images/contact.png" alt="contact images" />
         </div>
       </div>

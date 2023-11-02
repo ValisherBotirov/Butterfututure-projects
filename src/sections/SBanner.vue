@@ -2,7 +2,7 @@
   <div class="relative">
     <div class="container pt-5 md:pt-[72px]">
       <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-5 md:gap-8">
-        <div class="md:py-[50px]">
+        <div data-aos="fade-up" class="md:py-[50px]">
           <div>
             <h2
               class="text-[#1F2937] font-semibold text-2xl md:text-[40px] leading-8 md:leading-[48px] max-w-[600px]"
@@ -27,7 +27,7 @@
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-3 gap-3 md:gap-5">
+        <div class="grid grid-cols-3 gap-3 md:gap-5" data-aos="fade-down">
           <div class="col-span-2 max-h-[316px]">
             <img
               src="@/assets/images/banner4.png"
@@ -61,14 +61,14 @@
       <div
         class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-[140px] mt-6 md:mt-12 items-center"
       >
-        <div class="">
+        <div data-aos="fade-right" class="">
           <img
             src="@/assets/images/banner-bottom.png"
             alt="banner images"
             class="w-full h-[284px] md:h-full object-cover rounded-[16px]"
           />
         </div>
-        <div>
+        <div data-aos="fade-right">
           <h2
             class="text-[#1F2937] font-semibold text-2xl md:text-[40px] leading-8 md:leading-[48px] max-w-[600px]"
           >
@@ -78,7 +78,7 @@
             Онлайн-академия Coozin предоставляет обучение и помощь в развитии
             бизнеса.
           </p>
-          <div class="mt-[26px] md:mt-[56px] flex flex-col gap-6 md:gap-[34px]">
+          <div data-aos="fade-left" class="mt-[26px] md:mt-[56px] flex flex-col gap-6 md:gap-[34px]">
             <BannerCard
               v-for="item in bannerList"
               :key="item.id"
